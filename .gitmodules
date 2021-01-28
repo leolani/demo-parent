@@ -10,3 +10,7 @@
 	path = cltl-demo-component
 	url = ../cltl-demo-component
 	branch = main
+[submodule "cltl-demo"]
+	path = cltl-demo
+	url = ../cltl-demo
+	branch = main
