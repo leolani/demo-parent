@@ -6,3 +6,7 @@
 	path = cltl-requirements
 	url = https://github.com/leolani/cltl-requirements.git
 	branch = main
+[submodule "cltl-demo-component"]
+	path = cltl-demo-component
+	url = ../cltl-demo-component
+	branch = main
