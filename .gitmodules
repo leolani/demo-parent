@@ -1,0 +1,4 @@
+[submodule "cltl-combot"]
+	path = cltl-combot
+	url = https://github.com/leolani/cltl-combot.git
+	branch = main
