@@ -2,3 +2,7 @@
 	path = cltl-combot
 	url = https://github.com/leolani/cltl-combot.git
 	branch = main
+[submodule "cltl-requirements"]
+	path = cltl-requirements
+	url = https://github.com/leolani/cltl-requirements.git
+	branch = main
