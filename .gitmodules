@@ -1,16 +1,16 @@
 [submodule "cltl-combot"]
 	path = cltl-combot
-	url = https://github.com/leolani/cltl-combot.git
+	url = /Users/tkb/automatic/workspaces/robo/leolani-namespace/cltl-combot
 	branch = main
 [submodule "cltl-requirements"]
 	path = cltl-requirements
-	url = https://github.com/leolani/cltl-requirements.git
+	url = /Users/tkb/automatic/workspaces/robo/leolani-namespace/cltl-requirements
 	branch = main
 [submodule "cltl-demo-component"]
 	path = cltl-demo-component
-	url = ../cltl-demo-component
+	url = /Users/tkb/automatic/workspaces/robo/leolani-namespace/cltl-demo-component
 	branch = main
 [submodule "cltl-demo"]
 	path = cltl-demo
-	url = ../cltl-demo
+	url = /Users/tkb/automatic/workspaces/robo/leolani-namespace/cltl-demo
 	branch = main

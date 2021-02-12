@@ -7,7 +7,7 @@ project_version = $(shell cat version.txt)
 components = $(addprefix ${project_root}/, \
 		cltl-combot \
 		cltl-requirements \
-		cltl-deme \
+		cltl-demo \
 		cltl-demo-component)
 
 dependencies = $(addsuffix /makefile.d, $(components))
@@ -42,3 +42,5 @@ $(dependencies):
 	$(MAKE) --directory=$(dir $@) depend
 
 include $(dependencies)
+
+include makefile.git.mk
