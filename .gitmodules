@@ -14,3 +14,7 @@
 	path = cltl-demo
 	url = /Users/tkb/automatic/workspaces/robo/leolani-namespace/cltl-demo
 	branch = main
+[submodule "util"]
+	path = util
+	url = https://github.com/leolani/cltl-build
+	branch = main

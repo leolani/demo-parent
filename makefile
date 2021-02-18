@@ -1,46 +1,20 @@
-SHELL=/bin/bash
+SHELL = /bin/bash
 
-export project_root=$(realpath .)
-project_name = "demo"
-project_version = $(shell cat version.txt)
+project_root ?= $(realpath .)
+project_name ?= "demo"
+project_version ?= $(shell cat version.txt)
 
-components = $(addprefix ${project_root}/, \
+project_repo ?= ${project_root}/cltl-requirements/leolani
+project_mirror ?= ${project_root}/cltl-requirements/mirror
+
+project_components = $(addprefix ${project_root}/, \
 		cltl-combot \
 		cltl-requirements \
 		cltl-demo \
 		cltl-demo-component)
 
-dependencies = $(addsuffix /makefile.d, $(components))
+git_remote ?= https://github.com/leolani
 
 
-target ?= install
-.DEFAULT_GOAL := build
-
-
-$(info Run $(target) for $(project_name), version: $(project_version), in $(project_root))
-
-
-.PHONY: clean
-clean:
-	$(MAKE) target=clean
-
-.PHONY: install
-install:
-	$(MAKE) target=install
-
-.PHONY: build
-build: $(components)
-
-.PHONY: $(components)
-$(components):
-	$(MAKE) --directory=$@ $(target)
-
-.PHONY: depend
-depend: $(dependencies)
-
-$(dependencies):
-	$(MAKE) --directory=$(dir $@) depend
-
-include $(dependencies)
-
-include makefile.git.mk
+include util/make/makefile.parent.mk
+include util/make/makefile.git.mk
