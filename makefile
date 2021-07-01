@@ -13,6 +13,7 @@ project_components = $(addprefix ${project_root}/, \
 		cltl-demo \
 		cltl-demo-component)
 
+git_local ?= ..
 git_remote ?= https://github.com/leolani
 
 
