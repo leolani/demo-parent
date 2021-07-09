@@ -1,7 +1,7 @@
 SHELL = /bin/bash
 
 project_root ?= $(realpath .)
-project_name ?= "demo"
+project_name ?= "cltl-demo"
 project_version ?= $(shell cat version.txt)
 
 project_repo ?= ${project_root}/cltl-requirements/leolani
